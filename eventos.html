@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cumpleaños-MOM DELEITE</title>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap');
+    .font-merriweather {
+      font-family: 'Merriweather', serif;
+    }
+  </style>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+</head>
+
+
+<body class="">
+    <!-- Franja superior -->
+    <!--NAV-->
+    <nav class="bg-[#fecdd3] ">
+        <div class="">
+            <div class="container mx-auto p-6 flex justify-between">
+                <!--ICONO HAMBURGUESA-->
+                <button  id="menuButton" class="text-white block sm:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                    </svg>  
+                </button>  
+                <!--ICONO X-->
+                <div id= "menu" class="hidden sm:hidden fixed inset-0 bg-white  flex flex-col justify-center items-center">
+                    <button id="closeButton" class="text-gray-400 hidden absolute top-20 p-8 ">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                        </svg>                  
+                    </button>
+                    <ul class="space-y-8 text-center font-afacad text-xl">
+                    <li class="hover:font-bold hover:text-[#fda4af] hover:font-medium cursor-pointer"><a href="../PAGINA/page.html" class="">INICIO</a></li>
+                    <li class="hover:font-bold hover:text-[#fda4af] hover:font-medium cursor-pointer"><a href="../PAGINA/nosotros.html" class="">NOSOTROS</a></li> 
+                    <li class="hover:font-bold hover:text-[#fda4af] hover:font-medium cursor-pointer"><a href="../PAGINA/eventos.html" class="">EVENTOS</a></li> 
+                    <li class="hover:font-bold hover:text-[#fda4af] hover:font-medium cursor-pointer"><a href="../PAGINA/especiales.html" class="">TIENDA</a></li> 
+                    <li class="hover:font-bold hover:text-[#fda4af] hover:font-medium cursor-pointer"><a href="../PAGINA/contactanos.html" class="">CONTÁCTANOS</a></li>  
+                    </ul>
+                    <div class="flex my-8 h-10 justify-center space-x-5 ">
+                        <button class="cursor-pointer">
+                            <img src="../PAGINA/imagenes/facebook.png" alt="Facebook" class="h-full">
+                        </button>
+                        <button class="">
+                            <img src="../PAGINA/imagenes/hh.png" alt="" class="h-full">
+                        </button>
+                        <button class="">
+
+                        </button>
+                    </div>
+                </div>         
+                
+                <!--ICONO INSTA Y FACEBOOK-->
+                <div class=" hidden sm:block   ">
+                    <div class="flex h-8 space-x-5">
+                    <button class="">
+                        <img src="../PAGINA/imagenes/FACEBOOK_NAV.png" alt="" class="h-full">
+                    </button>
+                    <button class="">
+                        <img src="../PAGINA/imagenes/INSTA_NAV.png" alt="" class="h-full">                  
+                    </button>
+                    </div>
+                </div>
+                
+                <!--NOMBRE-->
+                <div class="text-center flex justify-between"> 
+                    <p class="text-[#fafaf9] font-medium text-3xl font-bold">MOM DELEITE</p>
+                </div> 
+
+
+                <!--ICONO CORAZON Y CARRITO-->
+                <div class="justify-between space-x-5">
+                    <button class="text-white">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+                        </svg>
+                    </button>
+                    <button class="text-white">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" />
+                        </svg>                      
+                    </button>
+                </div>
+            </div>
+            
+            <div class=" h-8 flex ">
+                <img src="../PAGINA/imagenes/fonditoo.png" alt="fondo_lineas" class="w-1/4 h-full">
+                <img src="../PAGINA/imagenes/fonditoo.png" alt="fondo_lineas" class="w-1/4 h-full">
+                <img src="../PAGINA/imagenes/fonditoo.png" alt="fondo_lineas" class="w-1/4 h-full">
+                <img src="../PAGINA/imagenes/fonditoo.png" alt="fondo_lineas" class="w-1/4 h-full">
+            </div>
+        </div>
+
+        <div class="hidden sm:block bg-white p-3 " > <!--hidden: oculto por defecto --sm:block permite mostrar el bloque en pantalla pequeña-->
+            <div class=" justify-between text-center space-x-5 ">
+              <a href="../PAGINA/page.html" class="text-gray-400 px-3 hover:font-medium ">INICIO</a>
+              <a href="../PAGINA/nosotros.html" class="text-gray-400 hover:font-medium">NOSOTROS</a>
+              <a href="../PAGINA/eventos.html" class="text-gray-400 hover:font-medium">EVENTOS</a>
+              <a href="../PAGINA/especiales.html" class="text-gray-400 hover:font-medium">TIENDA</a>
+              <a href="../PAGINA/contactanos.html" class="text-gray-400 hover:font-medium">CONTÁCTANOS</a>
+            </div>
+        </div>
+
+        
+    </nav>
+
+    <!--TITULO EVENTOS-->
+    <div class="flex flex-col justify-center items-center text-center h-[150px] mt-2 bg-gray-100 text-gray-500 ">
+        <p class="font-merriweather text-3xl">EVENTOS</p>
+        <p class="font-afacad">
+            <a href="page.html" class="hover:text-pink-400 hover:underline">INICIO</a>
+            <a href="eventos.html" class="text-pink-400" aria-current="eventos">/ EVENTOS</a>
+        </p>
+    </div>    
+
+    <!-- Sección Combos de Cumpleaños -->
+    <section class=" container mx-auto mt-10">
+        <div class="text-center mb-10">
+            <h2 class="text-3xl font-bold text-gray-800">Lo mejor en Cumpleaños</h2>
+            <p class="text-lg text-gray-600">Celebra tu cumpleaños con nuestras deliciosas opciones de combos.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Combo 1 -->
+            <div class="bg-white shadow-md rounded-lg overflow-hidden">
+                <img src="imagenes2/combo1.jpg" alt="Combo Celebracion 1" class="w-full h-64 object-cover">
+                <div class="p-4">
+                    <h3 class="text-lg font-bold text-gray-800">Combo Celebración</h3>
+                    <p class="text-gray-600">Incluye nuestra deliciosa torta de vainilla y vino Riccadonna</p>
+                    <p class="text-pink-500 font-semibold mt-2">$150</p>
+                    <button class="bg-pink-500 text-white px-4 py-2 mt-4 rounded-md hover:bg-[#fecdd3]">Comprar Ahora</button>
+                </div>
+            </div>
+
+            <!-- Combo 2 -->
+            <div class="bg-white shadow-md rounded-lg overflow-hidden">
+                <img src="imagenes2/combo3.jpg" alt="Combo Fiesta Cumpleaños 2" class="w-full h-64 object-cover">
+                <div class="p-4">
+                    <h3 class="text-lg font-bold text-gray-800">Combo Fiesta de Cumpleaños</h3>
+                    <p class="text-gray-600">Torta de naranja con decoraciones personalizadas y 20 bocaditos.</p>
+                    <p class="text-pink-500 font-semibold mt-2">$190</p>
+                    <button class="bg-pink-500 text-white px-4 py-2 mt-4 rounded-md hover:bg-[#fecdd3]">Comprar Ahora</button>
+                </div>
+            </div>
+
+            <!-- Combo 3 -->
+            <div class="bg-white shadow-md rounded-lg overflow-hidden">
+                <img src="imagenes2/combo33.jpg" alt="Combo Petite 2" class="w-full h-64 object-cover">
+                <div class="p-4">
+                    <h3 class="text-lg font-bold text-gray-800">Combo petite</h3>
+                    <p class="text-gray-600">Torta de vainilla con decoraciones personalizadas y 3 cupcakes.</p>
+                    <p class="text-pink-500 font-semibold mt-2">$80</p>
+                    <button class="bg-pink-500 text-white px-4 py-2 mt-4 rounded-md hover:bg-[#fecdd3]">Comprar Ahora</button>
+                </div>
+            </div>
+
+            
+        </div>
+    </section>
+
+
+
+    <!-- Sección Matrimonios -->
+    <section class="container mx-auto mt-40">
+    <div class="text-center mb-10">
+        <h2 class="text-3xl font-bold text-gray-800">Lo mejor en Matrimonios</h2>
+        <p class="text-lg text-gray-600">Celebra tu amor con nuestras elegantes y exquisitas tortas de matrimonio.</p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- boda 1 -->
+        <div class="bg-white shadow-md rounded-lg overflow-hidden">
+            <img src="imagenes2/boda2.jpg" alt="torta boda  1" class="w-full h-64 object-cover">
+            <div class="p-4">
+                <h3 class="text-lg font-bold text-gray-800">Torta Majestad Nupcial</h3>
+                <p class="text-gray-600">Una espléndida torta de siete niveles adornada con un diseño de encaje comestible y flores de azúcar </p>
+                <p class="text-pink-500 font-semibold mt-2">$350</p>
+                <button class="bg-pink-500 text-white px-4 py-2 mt-4 rounded-md hover:bg-[#fecdd3]">Comprar Ahora</button>
+            </div>
+        </div>
+
+        <!-- boda 2 -->
+        <div class="bg-white shadow-md rounded-lg overflow-hidden">
+            <img src="imagenes2/boda1.jpg" alt="torta boda 2" class="w-full h-64 object-cover">
+            <div class="p-4">
+                <h3 class="text-lg font-bold text-gray-800">Torta Elegancia Romantica</h3>
+                <p class="text-gray-600">Una torta de dos niveles con un glaseado suave de mantequilla y detalles de lazos .</p>
+                <p class="text-pink-500 font-semibold mt-2">$230</p>
+                <button class="bg-pink-500 text-white px-4 py-2 mt-4 rounded-md hover:bg-[#fecdd3]">Comprar Ahora</button>
+            </div>
+        </div>
+
+            <!-- boda 3 -->
+            <div class="bg-white shadow-md rounded-lg overflow-hidden">
+            <img src="imagenes2/boda3.jpg" alt="torta boda 3" class="w-full h-64 object-cover">
+            <div class="p-4">
+                <h3 class="text-lg font-bold text-gray-800">Torta Amor Puro</h3>
+                <p class="text-gray-600">Una delicada torta de dos niveles, decorada con glaseado de fondant blanco y  adornos de flores.</p>
+                <p class="text-pink-500 font-semibold mt-2">$200</p>
+                <button class="bg-pink-500 text-white px-4 py-2 mt-4 rounded-md hover:bg-[#fecdd3]">Comprar Ahora</button>
+            </div>
+        </div>
+
+        
+    </div>
+    </section>
+
+
+    <!-- Sección Buatizos -->
+    <section class="container mx-auto mt-40">
+    <div class="text-center mb-10">
+        <h2 class="text-3xl font-bold text-gray-800">Lo mejor en Bautizos</h2>
+        <p class="text-lg text-gray-600">Endulza el primer gran evento de tu bebé con nuestras delicadas tortas de bautizo.</p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- bautizo 1 -->
+        <div class="bg-white shadow-md rounded-lg overflow-hidden">
+            <img src="imagenes2/bautizo1.jpg" alt="torta bautizo  1" class="w-full h-64 object-cover">
+            <div class="p-4">
+                <h3 class="text-lg font-bold text-gray-800">Torta Sueño de Angeles</h3>
+                <p class="text-gray-600">Una tierna torta decorada con suaves detalles en fondant con un delicado sabor a vainilla y relleno de crema de limón. </p>
+                <p class="text-pink-500 font-semibold mt-2">$140</p>
+                <button class="bg-pink-500 text-white px-4 py-2 mt-4 rounded-md hover:bg-pink-600">Comprar Ahora</button>
+            </div>
+        </div>
+
+        <!-- bautizo 2 -->
+        <div class="bg-white shadow-md rounded-lg overflow-hidden">
+            <img src="imagenes2/bautizo.jpg" alt="torta bautizo 2" class="w-full h-64 object-cover">
+            <div class="p-4">
+                <h3 class="text-lg font-bold text-gray-800">Torta Bendición Celestial</h3>
+                <p class="text-gray-600">Una elegante torta en tonos pastel, con un esponjoso bizcocho de almendra y relleno de crema de frambuesa.</p>
+                <p class="text-pink-500 font-semibold mt-2">$200</p>
+                <button class="bg-pink-500 text-white px-4 py-2 mt-4 rounded-md hover:bg-[#fecdd3]">Comprar Ahora</button>
+            </div>
+        </div>
+
+            <!-- bautizo 3 -->
+            <div class="bg-white shadow-md rounded-lg overflow-hidden">
+            <img src="imagenes2/bautizo3.jpg" alt="torta bautizo 3" class="w-full h-64 object-cover">
+            <div class="p-4">
+                <h3 class="text-lg font-bold text-gray-800">Torta Alegría Divina</h3>
+                <p class="text-gray-600">Una encantadora torta decorada con glaseado de mantequilla , con un delicioso relleno de crema de vainilla.</p>
+                <p class="text-pink-500 font-semibold mt-2">$160</p>
+                <button class="bg-pink-500 text-white px-4 py-2 mt-4 rounded-md hover:bg-pink-600">Comprar Ahora</button>
+            </div>
+        </div>
+
+        
+    </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#fecdd3] mt-4 w-full ">
+        <div class="flex flex-row items-center justify-center p-10 space-x-4 ">
+            <!-- Logo -->
+            <div class="h-20 mb-4 ">
+                <img src="../PAGINA/imagenes/LOGO.jpeg" alt="Logo" class="h-full">
+            </div>
+            <!-- Contacto -->
+            <div class="text-center font-family text-[#334155]  md:ml-10">
+                <p>&copy; 2024 MOM DELEITE. Todos los derechos reservados.</p>
+                <p>
+                    Av. Fátima 506 / Trujillo / Perú<br>
+                    <strong>Celular:</strong> 949342022 <br>
+                    <strong>Correo:</strong> momdeleite@gmail.com
+                </p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script>
+        document.getElementById('menuButton').addEventListener('click', function() {
+            document.getElementById('menu').classList.remove('hidden');
+            document.getElementById('menuButton').classList.add('hidden');
+            document.getElementById('closeButton').classList.remove('hidden');
+            document.getElementById('pedidos').classList.add('hidden');
+            });
+    
+        document.getElementById('closeButton').addEventListener('click', function() {
+            document.getElementById('menu').classList.add('hidden');
+            document.getElementById('menuButton').classList.remove('hidden');
+            document.getElementById('closeButton').classList.add('hidden');
+            document.getElementById('pedidos').classList.remove('hidden');
+        });
+    
+    
+    
+        </script>
+
+</body>
+</html>

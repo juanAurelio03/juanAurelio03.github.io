@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400;0,500;0,700;1,400&family=Oswald:wght@200..700&family=Permanent+Marker&display=swap');
+        .font-afacad {
+            font-family: 'Afacad', sans-serif;
+        }
+
+        .font-oswald {
+            font-family: 'Oswald', sans-serif;
+        }
+    </style>
+</head>
+<body class="">
+
+    <!--NAV-->
+    <nav class="bg-[#fecdd3] ">
+        <div class="">
+            <div class="container mx-auto p-6 flex justify-between">
+                <!--ICONO HAMBURGUESA-->
+                <button  id="menuButton" class="text-white block sm:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                    </svg>  
+                </button>  
+                <!--ICONO X-->
+                <div id= "menu" class="hidden sm:hidden fixed inset-0 bg-white  flex flex-col justify-center items-center">
+                    <button id="closeButton" class="text-gray-400 hidden absolute top-20 p-8 ">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                        </svg>                  
+                    </button>
+                    <ul class="space-y-8 text-center font-afacad text-xl">
+                    <li class="hover:font-bold hover:text-[#fda4af] hover:font-medium cursor-pointer"><a href="../PAGINA/page.html" class="">INICIO</a></li>
+                    <li class="hover:font-bold hover:text-[#fda4af] hover:font-medium cursor-pointer"><a href="../PAGINA/nosotros.html" class="">NOSOTROS</a></li> 
+                    <li class="hover:font-bold hover:text-[#fda4af] hover:font-medium cursor-pointer"><a href="../PAGINA/eventos.html" class="">EVENTOS</a></li> 
+                    <li class="hover:font-bold hover:text-[#fda4af] hover:font-medium cursor-pointer"><a href="../PAGINA/especiales.html" class="">TIENDA</a></li> 
+                    <li class="hover:font-bold hover:text-[#fda4af] hover:font-medium cursor-pointer"><a href="../PAGINA/contactanos.html" class="">CONTÁCTANOS</a></li>  
+                    </ul>
+                    <div class="flex my-8 h-10 justify-center space-x-5 ">
+                        <button class="cursor-pointer">
+                            <img src="../PAGINA/imagenes/facebook.png" alt="Facebook" class="h-full">
+                        </button>
+                        <button class="">
+                            <img src="../PAGINA/imagenes/hh.png" alt="" class="h-full">
+                        </button>
+                        <button class="">
+
+                        </button>
+                    </div>
+                </div>         
+                
+                <!--ICONO INSTA Y FACEBOOK-->
+                <div class=" hidden sm:block   ">
+                    <div class="flex h-8 space-x-5">
+                    <button class="">
+                        <img src="../PAGINA/imagenes/FACEBOOK_NAV.png" alt="" class="h-full">
+                    </button>
+                    <button class="">
+                        <img src="../PAGINA/imagenes/INSTA_NAV.png" alt="" class="h-full">                  
+                    </button>
+                    </div>
+                </div>
+                
+                <!--NOMBRE-->
+                <div class="text-center flex justify-between"> 
+                    <p class="text-[#fafaf9] font-medium text-3xl font-bold">MOM DELEITE</p>
+                </div> 
+
+
+                <!--ICONO CORAZON Y CARRITO-->
+                <div class="justify-between space-x-5">
+                    <button class="text-white">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+                        </svg>
+                    </button>
+                    <button class="text-white">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" />
+                        </svg>                      
+                    </button>
+                </div>
+            </div>
+            
+            <div class=" h-8 flex ">
+                <img src="../PAGINA/imagenes/fonditoo.png" alt="fondo_lineas" class="w-1/4 h-full">
+                <img src="../PAGINA/imagenes/fonditoo.png" alt="fondo_lineas" class="w-1/4 h-full">
+                <img src="../PAGINA/imagenes/fonditoo.png" alt="fondo_lineas" class="w-1/4 h-full">
+                <img src="../PAGINA/imagenes/fonditoo.png" alt="fondo_lineas" class="w-1/4 h-full">
+            </div>
+        </div>
+
+        <div class="hidden sm:block bg-white p-3 " > <!--hidden: oculto por defecto --sm:block permite mostrar el bloque en pantalla pequeña-->
+            <div class=" justify-between text-center space-x-5 ">
+              <a href="../PAGINA/page.html" class="text-gray-400 px-3 hover:font-medium ">INICIO</a>
+              <a href="../PAGINA/nosotros.html" class="text-gray-400 hover:font-medium">NOSOTROS</a>
+              <a href="../PAGINA/eventos.html" class="text-gray-400 hover:font-medium">EVENTOS</a>
+              <a href="../PAGINA/especiales.html" class="text-gray-400 hover:font-medium">TIENDA</a>
+              <a href="../PAGINA/contactanos.html" class="text-gray-400 hover:font-medium">CONTÁCTANOS</a>
+            </div>
+        </div>
+
+        
+    </nav>
+
+    <!--CARRUSEL IMAGENES-->
+    <div id="default-carousel" class="" data-carousel="slide">
+        <!-- Carousel wrapper -->
+        <div class="relative h-[300px] md:h-[400px] overflow-hidden lg:h-[500px]">
+             <!-- Item 1 -->
+            <div class="hidden duration-900 ease-in-out" data-carousel-item>
+                <img src="../PAGINA/imagenes/CARRUSEL_1.png" class="absolute block w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+            </div>
+            <!-- Item 2 -->
+            <div class="hidden duration-900 ease-in-out" data-carousel-item>
+                <img src="../PAGINA/imagenes/CARRUSEL_2.png" class="absolute block w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+            </div>
+            <!-- Item 3 -->
+            <div class="hidden duration-900 ease-in-out" data-carousel-item>
+                <img src="../PAGINA/imagenes/CARRUSEL.png" class="absolute block w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+            </div>
+        </div>
+        <!-- Slider indicators -->
+        <div class="absolute z-30  text-[#fecdd3] flex -translate-x-1/2  left-1/2 space-x-3 rtl:space-x-reverse">
+            <button type="button" class=" w-3  rounded-full" aria-current="true" aria-label="Slide 1"  data-carousel-slide-to="0">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+                  </svg>
+            </button>
+            <button type="button" class="w-3  rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+                  </svg>
+                  
+            </button>
+            <button type="button" class="w-3  rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+                  </svg>
+                  
+            </button>
+        </div>
+
+    </div>
+
+    <!--SECCIÓN-->
+    <section id="pedidos" class="p-10 space-y-8">
+        <div class="text-center">
+            <p class="p-8 text-4xl lg:text-6xl text-[#6b7280] font-oswald">¡Las más pedidas!</p>
+            <p class="p-4 text-[#a3a3a3]">Las preferidas por nuestros #MomDeleitelovers,
+            encuéntralas en sus diferentes tamaños y sabores</p>
+        </div>
+        <div class="block sm:hidden">
+            <div id="default-carousel" class="" data-carousel="slide">
+                <!-- Carousel wrapper -->
+                <div class="relative h-[400px] overflow-hidden ">
+                     <!-- Item 1 -->
+                    <div class="hidden  duration-900 ease-in-out" data-carousel-item>
+                       <div class="flex">
+                            <div class="w-1/2 h-full space-y-3 text-center">
+                            <img src="../PAGINA/imagenes/butterfly.jpg" class="cursor-pointer" alt="...">
+                            <p class="font-afacad font-bold">Butterfly</p>
+                            <p class="">Desde S/. 120.00</p>
+                            </div>
+                            <div class="w-1/2 h-full space-y-3 text-center">
+                            <img src="../PAGINA/imagenes/calado-costado.png" class="cursor-pointer" alt="...">
+                            <p class="font-afacad font-bold">Corazón Aesthetic</p>
+                            <p class="">Desde S/. 150.00</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Item 2 -->
+                    <div class="hidden  duration-900 ease-in-out" data-carousel-item>
+                        <div class="flex">
+                            <div class="w-1/2 h-full space-y-3 text-center">
+                                <img src="../PAGINA/imagenes/calado-costado.png" class="cursor-pointer" alt="...">
+                                <p class="font-afacad font-bold">Corazón Aesthetic</p>
+                                <p class="">Desde S/. 150.00</p>
+                                </div>
+                                <div class="w-1/2 h-full space-y-3 text-center">
+                                <img src="../PAGINA/imagenes/chocolate-lover-02.jpg" class="cursor-pointer" alt="...">
+                                <p class="font-afacad font-bold">Chocalate Lover</p>
+                                <p class="">Desde S/. 150.00</p>
+                                </div>
+                         </div>
+                     </div>
+                    <!-- Item 3 -->
+                    <div class="hidden  duration-900 ease-in-out" data-carousel-item>
+                        <div class="flex">
+                            <div class="w-1/2 h-full space-y-3 text-center">
+                                <img src="../PAGINA/imagenes/chocolate-lover-02.jpg" class="cursor-pointer" alt="...">
+                                <p class="font-afacad font-bold">Chocalate Lover</p>
+                                <p class="">Desde S/. 150.00</p>
+                                </div>
+                                <div class="w-1/2 h-full space-y-3 text-center">
+                                <img src="../PAGINA/imagenes/butterfly.jpg" class="cursor-pointer" alt="...">
+                                <p class="font-afacad font-bold">Mariposa Junior Rosa</p>
+                                <p class="">Desde S/. 180.00</p>
+                                </div>
+                         </div>
+                     </div>
+                </div>
+                <!-- Slider indicators -->
+                <div class="absolute z-30 text-[#fecdd3] flex -translate-x-1/2  left-1/2 space-x-3 rtl:space-x-reverse">
+                    <button type="button" class=" w-3  rounded-full" aria-current="true" aria-label="Slide 1"  data-carousel-slide-to="0">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+                          </svg>
+                    </button>
+                    <button type="button" class="w-3  rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+                          </svg>
+                          
+                    </button>
+                    <button type="button" class="w-3  rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+                          </svg>
+                          
+                    </button>
+                </div>
+            </div>
+        </div> 
+        <div class="hidden sm:block"> <!--OCULTO POR DEFECTO Y DEL TAMANO MD A ADELANTE SE MUESTRA-->
+            <div class="flex justify-center p-5 md:p-30 space-x-2 ">
+                <div class="w-1/5 h-full my-5 space-y-3 text-center   lg:border-dashed lg:border-r-4 lg:border-[#fca5a5]"> <!--my-5 para que la imagen baje-->
+                    <img src="../PAGINA/imagenes/butterfly.jpg" class="cursor-pointer mx-auto w-2/4" alt="...">
+                    <p class="font-afacad font-bold">Butterfly</p>
+                    <p class="">Desde S/. 120.00</p>
+                </div>
+                <div class="w-1/5 h-full space-y-3 text-center lg:border-dashed lg:border-r-4 lg:border-[#fca5a5]">
+                    <img src="../PAGINA/imagenes/calado-costado.png" class="cursor-pointer mx-auto w-2/4" alt="...">
+                    <p class="font-afacad font-bold">Corazón Aesthetic</p>
+                    <p class="">Desde S/. 150.00</p>
+                </div>
+                <div class="w-1/5 h-full space-y-3 text-center lg:border-dashed lg:border-r-4 lg:border-[#fca5a5]">
+                    <img src="../PAGINA/imagenes/chocolate-lover-02.jpg" class="cursor-pointer mx-auto w-2/4" alt="...">
+                    <p class="font-afacad font-bold">Chocalate Lover</p>
+                    <p class="">Desde S/. 150.00</p>
+                </div>
+                <div class="w-1/5 h-full space-y-3 text-center">
+                    <img src="../PAGINA/imagenes/torta-rosada-mariposas.jpg" class="cursor-pointer mx-auto w-2/4" alt="...">
+                    <p class="font-afacad font-bold">Mariposa Junior Rosa</p>
+                    <p class="">Desde S/. 180.00</p>
+                </div>    
+            </div>
+        </div>
+        <div class="text-center p-4"> 
+            <button class="bg-white border hover:bg-[#fca5a5] text-black font-medium font-bold py-2 px-4 rounded">
+                Ver más
+            </button> 
+        </div>  
+    </section>
+
+    <section class=" bg-[#fecdd3] ">
+        <div class="p-8 md:p-4">
+            <!--PANTALLA MOVIL-->
+            <div class="md:hidden flex flex-col px-4 items-center pt-8 pt-20 md:px-60 md:space-x-8">
+                <div class="order-1 md:order-2 text-center md:w-2/3 space-y-5 p-8 ">
+                    <p class="text-3xl md:text-6xl font-afacad text-[#44403c]">¡Cada torta es única como tú!</p>
+                    <p class="font-family text-[#78716c]">Por eso en Dulcefina personalizamos tu pedido</p>
+                    <p class="font-afacad text-[#78716c]">¿Estás próxima a casarte, celebrar un bautizo o tener una fiesta temática? Cuéntanos cómo imaginas tu celebración soñada y nosotras hacemos la torta adecuada.</p>
+                </div>
+                <div class="px-10 order-2 md:order-1">
+                <img src="../PAGINA/imagenes/section2_1.jpg" alt="" class="border-4 border-white">
+                </div>
+            </div> 
+            <!--PANTALLA MEDIANA+-->
+            <div class="hidden md:block md:flex px-10  lg:px-40 xl:px-60 pt-20 items-center space-y-8 md:space-x-8">
+                <img src="../PAGINA/imagenes/section2_1.jpg" alt="" class="h-auto  md:w-1/3 border-4 border-white">
+                <div class="text-center w-full lg:w-2/3 space-y-3">
+                    <p class=" text-3xl lg:text-4xl xl:text-6xl font-afacad text-[#44403c]">¡Cada torta es única como tú!</p>
+                    <p class="font-family xl:text-xl ">Por eso en Dulcefina personalizamos tu pedido</p>
+                    <p class="font-afacad xl:text-xl ">¿Estás próxima a casarte, celebrar un bautizo o tener una fiesta temática? Cuéntanos cómo imaginas tu celebración soñada y nosotras hacemos la torta adecuada.</p>
+                </div>
+            </div>
+        
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 pt-8 my-5 px-10 lg:px-40  xl:px-60">
+                <div><img src="../PAGINA/imagenes/section2_2.jpg" alt="" class="h-full border-4"></div>
+                <div><img src="../PAGINA/imagenes/section2_3.jpg" alt="" class="h-full border-4"></div>
+                <div><img src="../PAGINA/imagenes/section2_4.jpg" alt="" class="h-full border-4"></div>
+                <div><img src="../PAGINA/imagenes/section2_5.jpg" alt="" class="h-full border-4"></div>
+            </div>
+
+            
+        </div>
+    </section>
+
+    <div class=" h-3 md:h-8 flex flex-wrap">
+        <img src="../PAGINA/imagenes/fonditoo.png" alt="fondo_lineas" class="w-full h-full sm:w-1/4">
+        <img src="../PAGINA/imagenes/fonditoo.png" alt="fondo_lineas" class="w-full h-full sm:w-1/4">
+        <img src="../PAGINA/imagenes/fonditoo.png" alt="fondo_lineas" class="w-full h-full sm:w-1/4">
+        <img src="../PAGINA/imagenes/fonditoo.png" alt="fondo_lineas" class="w-full h-full sm:w-1/4">
+    </div>
+
+
+    <!-- Footer -->
+    <footer class="bg-[#fecdd3] w-full ">
+        <div class="flex flex-row items-center justify-center p-10 space-x-4 ">
+            <!-- Logo -->
+            <div class="h-20 mb-4 ">
+                <img src="../PAGINA/imagenes/LOGO.jpeg" alt="Logo" class="h-full">
+            </div>
+            <!-- Contacto -->
+            <div class="text-center font-family text-[#334155]  md:ml-10">
+                <p>&copy; 2024 MOM DELEITE. Todos los derechos reservados.</p>
+                <p>
+                    Av. Fátima 506 / Trujillo / Perú<br>
+                    <strong>Celular:</strong> 949342022 <br>
+                    <strong>Correo:</strong> momdeleite@gmail.com
+                </p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script>
+    document.getElementById('menuButton').addEventListener('click', function() {
+        document.getElementById('menu').classList.remove('hidden');
+        document.getElementById('menuButton').classList.add('hidden');
+        document.getElementById('closeButton').classList.remove('hidden');
+        document.getElementById('default-carousel').classList.add('hidden');
+        document.getElementById('pedidos').classList.add('hidden');
+        });
+
+    document.getElementById('closeButton').addEventListener('click', function() {
+        document.getElementById('menu').classList.add('hidden');
+        document.getElementById('menuButton').classList.remove('hidden');
+        document.getElementById('closeButton').classList.add('hidden');
+        document.getElementById('default-carousel').classList.remove('hidden');
+        document.getElementById('pedidos').classList.remove('hidden');
+    });
+
+
+
+    </script>
+</body>
+</html>
